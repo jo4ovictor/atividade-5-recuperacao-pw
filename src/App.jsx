@@ -1,26 +1,30 @@
-import Button from "./Button";
+import Menu from "./Menu.jsx";
 
 function App(){
-  const botao = [
+  const lista_menu = [
     {
-      tit: "PREVIOUS",
-      sub: "JQUERY: DETECT UPDATE OF HTML ELEMENT",
+      tit: "Tools",
     },
     {
-      tit2: "NEXT",
-      sub2: "RAILS + DEVISE WORKING WITH MULTIPLE MODELS"
+      tit: "Pricing",
+    },
+    {
+      tit: "Blog",
+    },
+    {
+      tit: "About",
+    },
+    {
+      tit: "Customers",
     },
   ];
 
   return (
     <div>
-      {botao.map((button) => {
-        return <Button 
-                titulo={button.tit}
-                subtitulo={button.sub}
-                titulo2={button.tit2}
-                subtitulo2={button.sub2}
-                />;
+      {lista_menu.map((menu) => {
+        return <Menu 
+                titulo={menu.tit}
+                />
       })
       }
     </div>
