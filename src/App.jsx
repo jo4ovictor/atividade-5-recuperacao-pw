@@ -1,5 +1,5 @@
 import Menu from "./Menu.jsx";
-
+import "./App.css"
 function App(){
   const lista_menu = [
     {
@@ -20,7 +20,7 @@ function App(){
   ];
 
   return (
-    <div>
+    <div className="pai">
       {lista_menu.map((menu) => {
         return <Menu 
                 titulo={menu.tit}
